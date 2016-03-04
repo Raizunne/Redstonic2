@@ -1,0 +1,16 @@
+[
+{
+  "modid": "redstonic",
+  "name": "Redstonic",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Raizu"],
+  "credits": "The Forge and FML guys, actually",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
