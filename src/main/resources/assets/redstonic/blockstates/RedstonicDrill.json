@@ -1,0 +1,111 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:dirt"
+    },
+    "variants": {
+		"head":{
+			"Iron":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Iron"
+						}
+					}
+				}
+			},
+			"Gold":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Gold"
+						}
+					}
+				}
+			},
+			"Diamond":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Diamond"
+						}
+					}
+				}
+			},
+			"Heavy":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Heavy"
+						}
+					}
+				}
+			},
+			"Fortuitous":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Fortuitous"
+						}
+					}
+				}
+			},
+			"Silky":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Silky"
+						}
+					}
+				}
+			},
+			"Blazer":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Blazer"
+						}
+					}
+				}
+			},
+			"Ultimate":{
+				"submodel":{
+					"overlayHead":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Heads/Render/Ultimate"
+						}
+					}
+				}
+			}
+		},
+		"body":{
+			"Iron":{
+				"submodel":{
+					"overlayBody":{
+						"model": "redstonic:normalItem",
+						"textures":{
+							"layer0": "redstonic:items/Drill/Bodies/Render/Iron"
+						}
+					}
+				}
+			}
+		},
+		"mod1":{
+			"none":{}
+		},
+		"mod2":{
+			"none":{}
+		},
+		"mod3":{
+			"none":{}
+		}
+    }
+}

@@ -1,0 +1,20 @@
+itemGroup.Redstonic=Redstonic
+
+item.ironDrillHead.name=Iron Drill Head
+item.goldDrillHead.name=Gold Drill Head
+item.diamondDrillHead.name=Diamond Drill Head
+item.heavyDrillHead.name=Heavy Drill Head
+item.fortuitousDrillHead.name=Fortuitous Drill Head
+item.silkyDrillHead.name=Silky Drill Head
+item.blazerDrillHead.name=Blazer Drill Head
+item.ultimateDrillHead.name=Ultimate Drill Head
+
+item.ironDrillBody.name=Iron Drill Body
+item.electrumDrillBody.name=Electrum Drill Body
+item.enderiumDrillBody.name=Enderium Drill Body
+item.ultimateDrillBody.name=Ultimate Drill Body
+item.energeticDrillBody.name=Energetic Drill Body
+item.vibrantDrillBody.name=Vibrant Drill Body
+
+item.basicRedstonicBattery.name=Basic Redstonic Battery
+item.absoluteRedstonicBattery.name=Absolute Redstonic Battery

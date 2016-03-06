@@ -1,0 +1,52 @@
+{
+  "heads":[
+    {
+      "name": "Iron",
+      "speed": 10
+    },
+    {
+      "name": "Gold",
+      "speed": 25
+    },
+    {
+      "name": "Diamond",
+      "speed": 15
+    },
+    {
+      "name": "Heavy",
+      "speed": 8
+    },
+    {
+      "name": "Fortuitous",
+      "speed": 5
+    },
+    {
+      "name": "Silky",
+      "speed": 8
+    },
+    {
+      "name": "Blazer",
+      "speed": 10
+    },
+    {
+      "name": "Ultimate",
+      "speed": 100000
+    }
+  ],
+  "bodies":[
+    {
+      "name": "Iron",
+      "mods": 1
+    }
+  ],
+  "power":[
+    {
+      "name": "Basic",
+      "max": 100000
+    },
+    {
+      "name": "Absolute",
+      "max": -1
+    }
+  ]
+}
