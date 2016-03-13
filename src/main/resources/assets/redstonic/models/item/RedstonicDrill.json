@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/diamond_pickaxe"
+        "layer0": "redstonic:items/Drill/PlaceHolder"
     },
     "display": {
         "thirdperson": {
