@@ -10,4 +10,6 @@ public class CommonProxy {
    }
 
    public void prepareVariants(){}
+
+   public void registerPreInit(){}
 }

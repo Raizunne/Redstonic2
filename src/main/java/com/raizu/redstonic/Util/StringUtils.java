@@ -13,12 +13,13 @@ public class StringUtils {
       String progress = "["+ EnumChatFormatting.GREEN;
       int curr = (cap*size)/max;
       for(int i=0; i<curr; i++){
-         progress += "=";
+         progress += "|";
+      }
+      progress+=EnumChatFormatting.DARK_GRAY;
+      for(int i=0; i<size-curr; i++){
+         progress += "|";
       }
       progress+=EnumChatFormatting.GRAY;
-      for(int i=0; i<size-curr; i++){
-         progress += " ";
-      }
       progress +="]";
       return progress;
    }

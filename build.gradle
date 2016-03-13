@@ -20,12 +20,12 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "2.0"
+version = "2.0BETA-1"
 group= "com.raizu.redstonic" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "redstonic"
+archivesBaseName = "Redstonic"
 
 minecraft {
-    version = "1.8.9-11.15.1.1722"
+    version = "1.8.9-11.15.1.1724"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

@@ -3,16 +3,21 @@ package com.raizu.redstonic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.raizu.redstonic.Item.Augment;
 import com.raizu.redstonic.Item.Drill.DrillBody;
 import com.raizu.redstonic.Item.Drill.DrillHead;
 import com.raizu.redstonic.Item.PowerBattery;
 import com.raizu.redstonic.Item.Drill.RedstonicDrill;
-import com.raizu.redstonic.Render.RedstonicMeshDefinition;
+import com.raizu.redstonic.Render.ModelBakeEventHandler;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -54,9 +59,16 @@ public class RedstonicItems {
          JsonArray pows = (JsonArray)obj.get("power");
          for(int i=0; i<pows.size(); i++){
             JsonObject newPower = (JsonObject)pows.get(i);
-            PowerBattery newDrillPower = new PowerBattery(newPower.get("name").getAsString(), Integer.valueOf(newPower.get("max").getAsString()));
+            PowerBattery newDrillPower = new PowerBattery(newPower.get("name").getAsString(), Integer.valueOf(newPower.get("max").getAsString()), Integer.valueOf(newPower.get("maxReceive").getAsString()));
             power.put(newDrillPower.name, newDrillPower);
             GameRegistry.registerItem(newDrillPower);
+         }
+         JsonArray drillAugs = (JsonArray)obj.get("augments");
+         for(int i=0; i<drillAugs.size(); i++){
+            JsonObject newAug = (JsonObject)drillAugs.get(i);
+            Augment newDrillAug = new Augment(newAug.get("name").getAsString());
+            drillMods.put(newDrillAug.name, newDrillAug);
+            GameRegistry.registerItem(newDrillAug);
          }
       } catch (Exception e) {
          e.printStackTrace();
@@ -73,16 +85,13 @@ public class RedstonicItems {
       for(Item item : power.values()){
          registerRender(item);
       }
+      for(Item item : drillMods.values()){
+         registerRender(item);
+      }
       registerRender(redstonicDrill);
    }
 
-   public static void registerDrill(RedstonicDrill drill){
-      ModelLoader.registerItemVariants(drill, drill.getItemVariants());
-      ModelLoader.setCustomMeshDefinition(drill, RedstonicMeshDefinition.instance());
-   }
-
    public static void registerRender(Item item){
-      System.out.println("REGISTERED : "+Redstonic.MODID + ":" + item.getUnlocalizedName());
       Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Redstonic.MODID + ":" + item.getUnlocalizedName(), "inventory"));
    }
 

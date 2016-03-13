@@ -1,5 +1,7 @@
 itemGroup.Redstonic=Redstonic
 
+item.RedstonicDrill.name=Redstonic Drill
+
 item.ironDrillHead.name=Iron Drill Head
 item.goldDrillHead.name=Gold Drill Head
 item.diamondDrillHead.name=Diamond Drill Head
